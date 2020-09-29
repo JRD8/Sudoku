@@ -68,7 +68,7 @@ def solve(bo):
     if not find: # If find = None (i.e., no more zeros or no empty spaces)
         return True # then return True or there are no more empties
     else:
-        col, row = find # There are still some empties
+        row, col = find # There are still some empties
 
     for i in range(1, 10): # Check numbers from 1-9, excluding 10
         if valid(bo, i, (row, col)): # Does adding that given number into board give valid solution?
